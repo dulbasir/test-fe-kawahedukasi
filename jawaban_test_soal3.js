@@ -20,22 +20,25 @@
      //     ***
      //    ****
      //   *****
-     var string = '';
-     for(var i=0; i<6; i++){
-         for(var j = 0; j < i; j++){
-     }
-     console.log('output 1')
-     console.log('*')
-     console.log('**')
-     console.log('***')
-     console.log('****')
-     console.log('*****')
-     console.log('******')
      
-     console.log('output 2')
-     console.log('    *')
-     console.log('   **')
-     console.log('  ***')
-     console.log(' ****')
-     console.log('*****')
-     
+console.log('output 1')
+
+var string = '';
+for(var i = 0; i < 6; i++){
+   for(var j = 0; j <= i; j++){
+       string += '*';
+   }
+   string += '\n';
+}
+console.log(string)
+
+console.log('output 2')
+
+var string = '';
+for(var i = 5; i > 0; i--){
+   for(var j = 0; j < i; j++){
+       string += '*';
+   }
+   string += '\n';
+}
+console.log(string)
