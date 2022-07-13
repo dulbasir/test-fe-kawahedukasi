@@ -21,24 +21,31 @@
      //    ****
      //   *****
      
-console.log('output 1')
-
-var string = '';
-for(var i = 0; i < 6; i++){
-   for(var j = 0; j <= i; j++){
-       string += '*';
-   }
-   string += '\n';
+console.log('Output 1')
+function output1 (baris){
+    let pola = '';
+for(let i = 1; i <= baris; i++){
+    for(let j = 1; j <= i; j++){
+        pola += '*';
+    }
+    pola += '\n';
 }
-console.log(string)
-
-console.log('output 2')
-
-var string = '';
-for(var i = 5; i > 0; i--){
-   for(var j = 0; j < i; j++){
-       string += '*';
-   }
-   string += '\n';
+return pola;
 }
-console.log(string)
+console.log(output1(6));
+
+console.log('Output 2')
+function output2 (baris){
+    let pola = '';
+for(let i = 1; i <= baris; i++){
+    for(let j = baris - 1; j >= i; j--){
+        pola += ' ';
+    }
+    for(let k = 1; k <= i; k++){
+        pola += '*';
+    }
+        pola += '\n';
+}
+return pola;
+}
+console.log(output2(5));
